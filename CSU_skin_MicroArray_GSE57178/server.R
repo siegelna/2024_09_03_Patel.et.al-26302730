@@ -114,7 +114,7 @@ server <- function(input, output, session) {
     distribution.plot_filtered <- ggplot(plot.df, aes(x = Stim, y = value, fill = Stim)) +
       geom_boxplot(color = "black") +  
       facet_grid(. ~ Stim, scales = "free_x") +  
-      labs(y = "Expression (CPM)", title = paste(input$gene)) +
+      labs(y = "Expression (RMA)", title = paste(input$gene)) +
       theme_minimal() +
       theme(legend.position = "top", axis.text.x = element_text(angle = 35, hjust = 1)) +
       theme(axis.title.x = element_blank()) +
