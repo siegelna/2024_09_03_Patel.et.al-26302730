@@ -65,8 +65,8 @@ ui <- fluidPage(
     ),
     mainPanel(
       fluidRow(
-        column(width = 9, plotly::plotlyOutput("out.plot_plotly", height = "900px")),
-        column(width = 6, dataTableOutput("out_plot_table"))  # Display the table
+        column(width = 8, plotly::plotlyOutput("out.plot_plotly", height = "400px")),
+        column(width = 4, dataTableOutput("out_plot_table"))  # Display the table
       ),
       downloadButton("download_data", "Download Data")
     )
